@@ -1,0 +1,437 @@
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+        <style>
+
+        /* Body Styling for compatibility with LibGuides */
+        body.s-lg-guide-body #s-lib-footer-public.container {
+        width: 100%;
+        max-width: none;       /* remove Bootstrap's max-width cap */
+        padding-left: 0;       /* optional: remove side padding */
+        padding-right: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reusable Centred Container for inner content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Full-width header/footer bars */
+        .site-header,
+        .site-footer {
+        width: 100%;
+        }
+
+        /* Inner header/footer content stays centered */
+        .site-header .container,
+        .site-footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* tweak as needed */
+        gap: 16px;
+        }
+        
+        /* Make images responsive in content */
+        .img {
+            max-width: 100%;
+            height: auto
+        }
+
+        /* Primary Button Styling */
+        .primary-button {
+            background-color: #007fa3;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 12px 20px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-button:hover {
+            background-color: #1e3765;
+            color: #ffffff;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Secondary Button Styling */
+        .link-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Tertiary Button Styling */
+        .tertiary-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tertiary-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Resource Item Styling */
+        .resource-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .resource-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .resource-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Downloadable Item Styling */
+        .download-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #E3F2FD;
+        }
+
+        .download-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .download-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Accordion Styling */
+        .accordion-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            background-color: #f2f4f7;
+            color: #1e3765;
+            font-size: 16px;
+            font-weight: bold;
+            user-select: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e8ecf0;
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .accordion-icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .accordion-icon::before {
+            content: "+";
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .accordion.open .accordion-content {
+            display: block;
+        }
+        
+        .accordion.open .accordion-icon::before {
+            content: "-";
+        }
+        
+        .accordion-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .accordion-content li {
+            margin-bottom: 8px;
+        }
+        
+        .accordion-content a {
+            text-decoration: none;
+        }
+        
+        .accordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Horizontal Rule Styling */
+        .hr-custom {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        .hr-pt-20 {
+            margin-top: 40px;
+        }
+        
+        /* Heading Styling */
+        h2 {
+            color: #1e3765;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3765;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            color: #007fa3;
+            margin-top: 20px;
+        }
+    </style>
+<body>
+
+<h2><b>Frequently Asked Questions</b></h2>
+
+<div class="accordion-container">
+<div class="accordion"><button aria-controls="content-1" aria-expanded="false" class="accordion-header"><span>1. Where can I practice using U of T Dataverse?</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-1">
+    <p>If you want to practice using U of T Dataverse you can use the demo repository. The demo repository allows you to practice things like creating a dataverse, adding data, organizing your data, and seeing how things will look when published. Please note that we recommend using a dummy dataset in the demo repository. You can also view the recorded workshop <a href="https://play.library.utoronto.ca/watch/70b5bdd1c2d2e74f00062aee107444d2" rel="noopener" target="_blank">Depositing Research Data in U of T Dataverse</a> to learn more about how to deposit and publish a dataset.</p>
+    </div>
+    </div>
+
+<div class="accordion"><button aria-controls="content-2" aria-expanded="false" class="accordion-header"><span>2. What file types can I add?</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-2">
+    <p>U of T Dataverse supports the uploading of any file type, including documents, images, video, audio, tabular files, compressed files, and more. We also encourage you to include a README file and documentation to help users navigate and reuse your data.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-3" aria-expanded="false" class="accordion-header"><span>3. Why can&#39;t I find the &quot;Add Data&quot; button?</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-3">
+    <p>The Add Data button is located on the U of T Dataverse home page to the right of the search bar. If you cannot find it, make sure you are logged in and that you are in the U of T Dataverse and not the main Borealis dataverse repository. If you still cannot find the Add Data button once you're in the U of T Dataverse Collection, please contact <a href="mailto:rdm@utoronto.ca" rel="noopener" target="_blank">rdm@utoronto.ca</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-4" aria-expanded="false" class="accordion-header"><span>4. When is a DOI assigned?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-4">
+    <p>A DOI is assigned once you publish your dataset. If you need a DOI before you are ready to make your data available you can use access restrictions. For more information, go to <a href="https://guides.library.utoronto.ca/u-t-dataverse/manage-data-access" rel="noopener" target="_blank">Manage Data Access</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-5" aria-expanded="false" class="accordion-header"><span>5. Why is my dataverse collection/dataset not showing up in U of T Dataverse?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-5">
+    <p>The most likely reason your dataverse collection or dataset is not showing up is because it is unpublished. Your unpublished dataverse collections and datasets are visible to you when you are logged in, but will not be visible to anyone else. For more information, go to <a href="https://guides.library.utoronto.ca/u-t-dataverse/publish-data" rel="noopener" target="_blank">Publish Data</a></p>
+</div>
+</div>
+
+<div class="accordion"> <button aria-controls="content-6" aria-expanded="false" class="accordion-header"><span>6. Why do my files convert to .tab files when I upload them?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-6">
+    <p>When uploading tabular file types (e.g., XLS, SPSS, CSV, etc.), U of T Dataverse creates a .tab version of the files so they can be read and used in Dataverse Explorer. This process does not damage the original file, and users can download the file in both the original and .tab format.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-7" aria-expanded="false" class="accordion-header"><span>7. Why do I get a &quot;Tabular Ingest Error&quot; when I try to upload my dataset?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-7">
+    <p>The most likely reason you&#39;ve received a &quot;Tabular Ingest Error&quot; is a formatting issue with your original file, such as commas within cells or inconsistent column headers. If you receive a &quot;Tabular Ingest Error&quot; but do not want to reformat your cells, you can simply ignore this message. Users will not get an error message after your dataset is published and will still be able to access and download your data. However, you will not be able to use the Data Explorer Tool or Data Curation Tool if your files are not converted to the .tab format.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-8" aria-expanded="false" class="accordion-header"><span>8. What is the Data Curation Tool and how do I use it?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-8">
+    <p>The Data Curation Tool allows a dataset administrator, curator, or contributor to add and edit variable-level metadata. For example, you can add information about weighted variables or how a variable was collected. Adding this metadata helps make your data easier to understand, interpret, and reuse. For more information on the Data Curation tool, go to the <a href="https://learn.scholarsportal.info/all-guides/borealis/files/#Data-Curation-Tool" rel="noopener" target="_blank">Borealis User Guide.</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-9" aria-expanded="false" class="accordion-header"><span>9. What is Data Explorer and how do I use it?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-9">
+    <p>The Data Explorer allows users to visualize and analyze data contained in tabular data files (.tab). Users can use this tool to cross-tabulate data and view summary statistics and charts. For more information on Data Explorer, go to the <a href="https://learn.scholarsportal.info/all-guides/borealis/finding-exploring-data/#Using-the-Data-Explorer" rel="noopener" target="_blank">Borealis User Guide.</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-10" aria-expanded="false" class="accordion-header"><span>10. I have a large number of files to add, is there a way to batch upload them?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-10">
+    <p>Yes! You can use the DVUploader to batch upload files and automate parts of your deposit workflow. DVUploader is a command-line bulk uploader that uses the existing Dataverse application programming interface (API) to upload files from a specified directory into a specified Dataset. For more information on DVUploader, visit the <a href="https://borealisdata.ca/guides/en/latest/user/dataset-management.html?highlight=dvuploader" rel="noopener" target="_blank">Borealis advanced guide.</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-11" aria-expanded="false" class="accordion-header"><span>11. How do I add large files (over 5 GB) to U of T Dataverse?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-11">
+    <p>U of T Dataverse can currently accept individual files that are up to 5 GB. If you need to deposit files that are larger than 5 GB you can compress your files into a ZIP or TAR file format. Note that U of T Dataverse will automatically unzip the first level of compression when you add your data files, so if you are depositing files larger than 5 GB you will need to double zip your file(s). We are currently working to increase the file size limitation. If you are working with a particularly large dataset we recommend contacting <a href="mailto:rdm@utoronto.ca" rel="noopener" target="_blank">rdm@utoronto.ca</a> before uploading your files.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-12" aria-expanded="false" class="accordion-header"><span>12. What does it mean to add an embargo to my dataset?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-12">
+    <p>Adding an embargo to your dataset or to specific data files means those files will not be accessible until the embargo date has passed. On the date set, the files will be released (publicly or with restricted access as set) automatically by the system. You may choose to apply an embargo to indicate that a dataset exists and will be available at a specified future date. The metadata records of your published dataset, including a DOI, will be available, but users will not be able to preview, access, or request access to the embargoed files until the date has passed. This can allow researchers to satisfy journal or funder requirements to publish research data while also protecting a researcher&#39;s data and intellectual property rights for a set period of time. Note that once you apply an embargo, you will not be able to change the embargo end date. If you need to update this information contact <a href="mailto:rdm@utoronto.ca" rel="noopener" target="_blank">rdm@utoronto.ca</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-13" aria-expanded="false" class="accordion-header"><span>13. Should I put all files from a project in one dataset, or should I break it down into multiple datasets?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-13">
+    <p>There are a number of factors that may influence how you decide to organize your files, including:</p>
+        <ol>
+            <li><b>What makes the most sense for the data, or for someone using the data?</b> If the datasets are related and would be used together, then it may make most sense to keep them together. If the datasets may be useful independently and you want to include more detailed descriptions of each, then you may want to separate them.</li>
+            <li><b>Is linking to the data from a publication (or elsewhere) a priority?</b> If it is, then you may want to think about how you want to reference or refer to it. For example, if you were writing a data availability statement, deciding if you wanted to provide one DOI or multiple DOIs may be a determining factor. If you want to include multiple DOIs, your data would need to be organized into multiple Datasets (note that you can provide individual citations for data files within a Dataset, but they will all have the same DOI).</li>
+            <li><b>Do your data files have different authors?</b> If yes, you may want to create datasets based on authorship to ensure contributions are properly acknowledged.</li>
+        </ol>
+    <p>For more information on how to structure a dataset, go to <a href="https://guides.library.utoronto.ca/c.php?g=746335&p=5406068" rel="noopener" target="_blank">Plan Data Structure</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-14" aria-expanded="false" class="accordion-header"><span>14. How should I reference my data in a publication?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-14">
+    <p>Different publications may have different guidelines around how to reference data. This information can usually be found on the publication&#39;s website under &quot;submission guidelines&quot; or &quot;guide for authors&quot;. Typically, you would include the following information:</p>
+    <ol>
+        <li>Author(s)</li>
+        <li>Year</li>
+        <li>Dataset title</li>
+        <li>Version (if applicable)</li>
+        <li>Repository name</li>
+        <li>Persistent identifier</li>
+    </ol>
+    <p>U of T Dataverse uses DOIs as persistent identifiers, which are assigned to all published datasets. If a publication does not specify how your data should be referenced, you can use the recommended citation automatically generated by U of T Dataverse. This citation block can be found in the blue box at the top of the dataset homepage. In addition to the citation block provided, you can also download the XML, RIS, or BIB file for ingestion into your citation manager.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-15" aria-expanded="false" class="accordion-header"><span>15. How do I link datasets to publications?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-15">
+    <p>You can link publications and other related outputs through <b>dataset-level metadata</b> in U of T Dataverse. Specifically, you can use the fields <b>Related Publication</b>, <b>Related Material</b>, and <b>Related Dataset</b> to input information. This can be done through a formatted citation, a URL, or a variety of identifiers (e.g., DOI, ISSN, arXiv, Handle, etc.). For more information, go to <a href="https://guides.library.utoronto.ca/u-t-dataverse/update-metadata" rel="noopener" target="_blank">Update Metadata</a></p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-16" aria-expanded="false" class="accordion-header"><span>16. Can I reuse, add to, and make derivatives of other data in U of T Dataverse?</span><span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-16">
+    <p>This will depend on the license and/or terms of access applied to the data you are using, which can be found in the Terms tab of a specific dataset. If you plan on using a dataset created by someone else you will need to ensure the license allows you to create and share derivative products. Note that some licenses require that anything derived from the data must be shared under the same open license, which will determine what license is most appropriate to apply to your dataset.</p>
+</div>
+</div>
+
+</div>
+
+<script>
+// JavaScript for accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const accordion = this.closest('.accordion');
+            const isCurrentlyOpen = accordion.classList.contains('open');
+            
+            // Toggle the current accordion
+            if (isCurrentlyOpen) {
+                accordion.classList.remove('open');
+                this.setAttribute('aria-expanded', 'false');
+            } else {
+                accordion.classList.add('open');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

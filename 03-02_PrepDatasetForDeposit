@@ -1,0 +1,309 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+    <style>
+
+        /* Body Styling for compatibility with LibGuides */
+        body.s-lg-guide-body #s-lib-footer-public.container {
+        width: 100%;
+        max-width: none;       /* remove Bootstrap's max-width cap */
+        padding-left: 0;       /* optional: remove side padding */
+        padding-right: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reusable Centred Container for inner content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Full-width header/footer bars */
+        .site-header,
+        .site-footer {
+        width: 100%;
+        }
+
+        /* Inner header/footer content stays centered */
+        .site-header .container,
+        .site-footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* tweak as needed */
+        gap: 16px;
+        }
+        
+        /* Make images responsive in content */
+        .img {
+            max-width: 100%;
+            height: auto
+        }
+
+        /* Primary Button Styling */
+        .primary-button {
+            background-color: #007fa3;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 12px 20px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-button:hover {
+            background-color: #1e3765;
+            color: #ffffff;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Secondary Button Styling */
+        .link-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Tertiary Button Styling */
+        .tertiary-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tertiary-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Resource Item Styling */
+        .resource-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .resource-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .resource-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Downloadable Item Styling */
+        .download-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #E3F2FD;
+        }
+
+        .download-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .download-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Accordion Styling */
+        .accordion-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            background-color: #f2f4f7;
+            color: #1e3765;
+            font-size: 16px;
+            font-weight: bold;
+            user-select: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e8ecf0;
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .accordion-icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .accordion-icon::before {
+            content: "+";
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .accordion.open .accordion-content {
+            display: block;
+        }
+        
+        .accordion.open .accordion-icon::before {
+            content: "-";
+        }
+        
+        .accordion-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .accordion-content li {
+            margin-bottom: 8px;
+        }
+        
+        .accordion-content a {
+            text-decoration: none;
+        }
+        
+        .accordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Horizontal Rule Styling */
+        .hr-custom {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        .hr-pt-20 {
+            margin-top: 40px;
+        }
+        
+        /* Heading Styling */
+        h2 {
+            color: #1e3765;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3765;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            color: #007fa3;
+            margin-top: 20px;
+        }
+    </style>
+    
+<h2><b>Prepare Dataset for Deposit</b></h2>
+
+<p>It is important that your files are organized and understandable before you deposit them. This will make it easier for others to find, access, and reuse your data. Even if you plan to restrict access to your dataset, taking the time to organize and describe your data will ensure you receive relevant requests for access and that you can understand and interpret your data years from now.</p>
+
+<hr>
+
+<h4><b>Considerations while preparing your data for deposit</b></h4>
+
+<ol>
+	<li><b>Make sure your files are clean and usable.</b> This may include ensuring variable names and labels are consistent, removing duplicate or erroneous data, and removing any temporary or administrative notes not meant for external users.</li>
+	<li><b>Use consistent and meaningful file names.</b> Applying a consistent file naming structure will help you and future users stay organized and identify a file&rsquo;s contents without opening it. Think about what information would be useful to an external user when browsing your files and, if necessary, consider renaming your files to support user access and data reusability. Avoid using long file names (i.e., over 32 characters), special characters, and spaces to ensure files can be easily used with different software.</li>
+	<li><b>Include data documentation.</b> Data documentation provides information about your data, including how it was created/collected, processed, and analyzed. This information allows future users to understand, interpret, and use your data. Some examples of data documentation include README files, codebooks, and data dictionaries.</li>
+	<li><b>Consider including additional non-proprietary copies.</b> If your dataset contains proprietary file types (e.g., DOC, XLS), consider adding an additional copy in a non-proprietary format (e.g., TXT, CSV). This will make it easier for researchers to access your files now and in the future without requiring access to specific proprietary programs.</li>
+</ol>
+
+

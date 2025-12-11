@@ -1,0 +1,392 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+    <style>
+
+        /* Body Styling for compatibility with LibGuides */
+        body.s-lg-guide-body #s-lib-footer-public.container {
+        width: 100%;
+        max-width: none;       /* remove Bootstrap's max-width cap */
+        padding-left: 0;       /* optional: remove side padding */
+        padding-right: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reusable Centred Container for inner content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Full-width header/footer bars */
+        .site-header,
+        .site-footer {
+        width: 100%;
+        }
+
+        /* Inner header/footer content stays centered */
+        .site-header .container,
+        .site-footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* tweak as needed */
+        gap: 16px;
+        }
+        
+        /* Make images responsive in content */
+        .img {
+            max-width: 100%;
+            height: auto
+        }
+
+        /* Primary Button Styling */
+        .primary-button {
+            background-color: #007fa3;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 12px 20px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-button:hover {
+            background-color: #1e3765;
+            color: #ffffff;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Secondary Button Styling */
+        .link-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Tertiary Button Styling */
+        .tertiary-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tertiary-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Resource Item Styling */
+        .resource-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .resource-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .resource-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Downloadable Item Styling */
+        .download-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #E3F2FD;
+        }
+
+        .download-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .download-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Accordion Styling */
+        .accordion-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            background-color: #f2f4f7;
+            color: #1e3765;
+            font-size: 16px;
+            font-weight: bold;
+            user-select: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e8ecf0;
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .accordion-icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .accordion-icon::before {
+            content: "+";
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .accordion.open .accordion-content {
+            display: block;
+        }
+        
+        .accordion.open .accordion-icon::before {
+            content: "-";
+        }
+        
+        .accordion-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .accordion-content li {
+            margin-bottom: 8px;
+        }
+        
+        .accordion-content a {
+            text-decoration: none;
+        }
+        
+        .accordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Horizontal Rule Styling */
+        .hr-custom {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        .hr-pt-20 {
+            margin-top: 40px;
+        }
+        
+        /* Heading Styling */
+        h2 {
+            color: #1e3765;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3765;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            color: #007fa3;
+            margin-top: 20px;
+        }
+    </style>
+
+<img src="https://d1qywhc7l90rsa.cloudfront.net/accounts/166980/images/u-t-dataverse-borealis-logo-white-2.png" alt="">
+<br>
+<h2><b>U of T Dataverse in Borealis</b></h2>
+
+<p>U of T Dataverse in Borealis is the institutional data repository of the University of Toronto. It is open to faculty, researchers, and students for research conducted at, or under the auspices of, U of T.</p>
+
+<p>The repository is hosted by <a href="https://borealisdata.ca/" rel="noopener" target="_blank">Borealis</a>, a secure, bilingual, multidisciplinary repository platform that supports discovery, management, sharing, and preservation of Canadian research data. Borealis supported by academic libraries and research institutions across Canada, with the University of Toronto operating as the national service provider.</p>
+
+<p>You can also view the recorded workshop <a href="https://play.library.utoronto.ca/watch/70b5bdd1c2d2e74f00062aee107444d2" rel="noopener" target="_blank">Depositing Research Data in U of T Dataverse</a> to learn more about how to deposit and publish a dataset.</p>
+
+<br> 
+
+<a class="primary-button" href="https://borealisdata.ca/dataverse/toronto" target="_blank">Explore U of T Dataverse</a>
+
+<hr>   
+
+<h3><b>Why choose U of T Dataverse?</b></h3>
+<br>
+
+<div class="accordion-container">
+<div class="accordion"><button aria-controls="content-1" aria-expanded="false" class="accordion-header"><span>Free to U of T researchers</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-1">
+    <p>U of T Dataverse is free to use and accepts data from research conducted at or under the auspices of U of T. Please note that U of T Dataverse does not currently accept sensitive or confidential data.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-2" aria-expanded="false" class="accordion-header"><span>Accepts all data types</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-2">
+    <p>U of T Dataverse accepts all types of files, including documents, images, video, audio, tabular files, compressed files, and more.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-3" aria-expanded="false" class="accordion-header"><span>DOIs and persistent identifiers</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-3">
+    <p>All published datasets receive a Digital Object Identifier (DOI), making it easy to share and cite your data (e.g. <a href="https://doi.org/10.5683/SP3/SCB4JJ" target="_blank">https://doi.org/10.5683/SP3/SCB4JJ</a>).</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-4" aria-expanded="false" class="accordion-header"><span>Automatically generated citations</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-4">
+    <p>U of T Dataverse automatically generates a recommended citation for all datasets. This makes it easy for future users to properly cite your data and ensures you are properly credited for your research.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-5" aria-expanded="false" class="accordion-header"><span>Preservation</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-5">
+    <p>All data is stored on secure servers located at U of T and undergoes monthly integrity checks to protect against data loss and corruption.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-6" aria-expanded="false" class="accordion-header"><span>Discoverability</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-6">
+    <p>Published datasets are automatically indexed for discovery, meaning they can be discovered through platforms like Google, <a href="http://www.lunaris.ca/" target="_blank">Lunaris</a>, <a href="http://datacite.org/" target="_blank">DataCite</a>, and other data indexes.</p>
+</div>
+</div>
+
+<div class="accordion"><button aria-controls="content-7" aria-expanded="false" class="accordion-header"><span>Controlled access</span> <span class="accordion-icon"></span></button>
+<div class="accordion-content" id="content-7">
+    <p>U of T Dataverse allows you to share your data openly or restrict access at the dataset and file level.</p>
+</div>
+</div>
+</div>
+
+<hr>
+
+<h3><b>Is U of T Dataverse the best repository for my data?</b></h3>
+<p>Choosing the right repository will help ensure your data is preserved, discoverable and accessible. Below are some considerations to help you decide if U of T Dataverse is the right repository for you:</p>
+<ul>
+    <li><b>Journal and funder requirements:</b> Some funders or publishers may have expectations related to data deposit or sharing, such as requiring or recommending the use of specific repositories.</li>
+    <li><b>Disciplinary data:</b> Depending on your field of study, there may be a disciplinary data repository that is a better fit for your data. Depositing your data in a repository that is commonly used in your discipline makes it more likely to be discovered by other researchers in your field.</li>
+    <li><b>Confidential and sensitive data:</b> At this time, U of T Dataverse is not an appropriate repository for sensitive or confidential data. All files must be anonymized or de-identified before being deposited.</li>
+    <li><b>File size:</b> At this time, the maximum file size for individual file uploads in U of T Dataverse is 5 GB. A dataset containing multiple files can exceed 5 GB as long as each individual file is 5 GB or less.</li>
+</ul>
+
+<script>
+// JavaScript for accordion functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const accordion = this.closest('.accordion');
+            const isCurrentlyOpen = accordion.classList.contains('open');
+            
+            // Toggle the current accordion
+            if (isCurrentlyOpen) {
+                accordion.classList.remove('open');
+                this.setAttribute('aria-expanded', 'false');
+            } else {
+                accordion.classList.add('open');
+                this.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>

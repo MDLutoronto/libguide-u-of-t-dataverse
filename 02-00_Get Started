@@ -1,0 +1,488 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+       <style>
+
+        /* Body Styling for compatibility with LibGuides */
+        body.s-lg-guide-body #s-lib-footer-public.container {
+        width: 100%;
+        max-width: none;       /* remove Bootstrap's max-width cap */
+        padding-left: 0;       /* optional: remove side padding */
+        padding-right: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reusable Centred Container for inner content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Full-width header/footer bars */
+        .site-header,
+        .site-footer {
+        width: 100%;
+        }
+
+        /* Inner header/footer content stays centered */
+        .site-header .container,
+        .site-footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* tweak as needed */
+        gap: 16px;
+        }
+        
+        /* Make images responsive in content */
+        .img {
+            max-width: 100%;
+            height: auto
+        }
+        
+        /* Primary Button Styling */
+        .primary-button {
+        background-color: #007fa3;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border: 1px solid #007fa3;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+        }
+
+        .primary-button:hover,
+        .primary-button:focus {
+        background-color: #1e3765;
+        color: #ffffff;
+        border-color: #ffffff;
+        text-decoration: none;
+        }
+
+        /* Secondary Button Styling */
+        .link-button {
+        background-color: #ffffff;
+        color: #1e3765;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border: 1px solid #007fa3;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        }
+
+        .link-button:hover,
+        .link-button:focus {
+        background-color: #007fa3;
+        color: #ffffff;
+        border-color: #007fa3;
+        text-decoration: none;
+        }
+
+        /* Tertiary Button Styling */
+        .tertiary-button {
+        background-color: #ffffff;
+        color: #1e3765;
+        font-family: Arial, sans-serif;
+        padding: 10px 15px;
+        border: 1px solid #007fa3;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 0;
+        transition: all 0.3s ease;
+        }
+
+        .tertiary-button:hover,
+        .tertiary-button:focus {
+        background-color: #f0f8ff;
+        color: #007fa3;
+        border-color: #1e3765;
+        text-decoration: none;
+        }
+        
+    /* Resource Item Styling */
+        .resource-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .resource-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .resource-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+        
+    /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+    /* Primary Grid Card Styling */
+        .primary-grid-card {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #1e3765;
+            display: flex;
+            flex-direction: column;
+            min-height: 250px;
+        }
+        
+        .primary-grid-card:focus-within {
+            outline: 2px solid #1e3765;
+            outline-offset: 2px;
+        }
+        
+        .primary-grid-card h5 {
+            margin-bottom: 12px;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        
+        .primary-card-description {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #ffffff;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+        
+        .primary-card-button {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+    /* Grid Card Styling */
+        .grid-card {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+            display: flex;
+            flex-direction: column;
+            min-height: 250px;
+        }
+        
+        .grid-card:focus-within {
+            outline: 2px solid #007fa3;
+            outline-offset: 2px;
+        }
+        
+        .grid-card h5 {
+            margin-bottom: 12px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        
+        .card-description {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #1a1a1a;
+            flex-grow: 1;
+            font-size: 14px;
+        }
+        
+        .card-button {
+            margin-top: auto;
+            align-self: flex-start;
+        }
+        
+    /* Accordion Styling */
+        .accordion-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            background-color: #f2f4f7;
+            color: #1e3765;
+            font-size: 16px;
+            font-weight: bold;
+            user-select: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e8ecf0;
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .accordion-icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .accordion.open .accordion-content {
+            display: block;
+        }
+        
+        .accordion.open .accordion-icon {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .accordion-content li {
+            margin-bottom: 8px;
+        }
+        
+        .accordion-content a {
+            text-decoration: none;
+        }
+        
+        .accordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+/* Grid Card 1 Button Styling */
+        .grid-card-button {
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background-color: #f0f8ff;
+        display: flex;
+        flex-direction: column;
+        min-height: 250px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        width: 100%;
+        text-align: left;
+        }
+
+        .grid-card-button:hover,
+        .grid-card-button:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 127, 163, 0.2);
+        background-color: #fafafa;
+        outline: none;
+        }
+
+        .grid-card-button h5 {
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #1e3765;
+        font-size: 16px;
+        margin-top: 0;
+        }
+
+        .grid-card-button .card-description {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        color: #1a1a1a;
+        flex-grow: 1;
+        font-size: 14px;
+        }
+
+        .grid-card-button .card-button {
+        margin-top: auto;
+        align-self: flex-start;
+        }
+
+    /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #007fa3;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+    /* Horizontal Rule Styling */
+        .hr-custom {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        .hr-pt-20 {
+            margin-top: 40px;
+        }
+        
+    /* Heading Styling */
+        h1 {
+            color: #1e3765;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #1e3765;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3765;
+            margin-top: 25px;
+            font-size: 18px;
+        }
+        
+        h4 {
+            color: #007fa3;
+            margin-top: 20px;
+        }
+        
+        /* Grid card specific h3 styling */
+        .grid-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        
+        /* Visually hidden utility class */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .grid-card {
+                min-height: auto;
+            }
+        }
+        
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Reduce motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            .primary-button,
+            .link-button,
+            .tertiary-button,
+            .accordion-header,
+            .accordion-icon {
+                transition: none;
+            }
+        }
+</style>
+<h2><b>Get Started</b></h2>
+
+<p>Learn how to use U of T Dataverse in Borealis to deposit, share, and manage your research data. Follow these steps to create an account and deposit your data.</p>
+
+<ul>
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/create-account">    Create account</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/deposit-data">     Deposit data</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/add-collaborators">Add collaborators</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/update-metadata">    Update metadata</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/manage-data-access">  Manage data access</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/publish-data">    Publish data</a></li>
+
+    <li><a href="https://guides.library.utoronto.ca/u-t-dataverse/version-management">  Version management</a></li>
+</ul>
+
+<p>Before making a real data deposit in U of T Dataverse, test out the features and functions of the Borealis platform in the <a href="https://guides.library.utoronto.ca/u-t-dataverse/demo-repository">demo repository</a>.</p>
+
+
+</section>
+</main>
+</div>

@@ -1,0 +1,351 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+    <style>
+
+        /* Body Styling for compatibility with LibGuides */
+        body.s-lg-guide-body #s-lib-footer-public.container {
+        width: 100%;
+        max-width: none;       /* remove Bootstrap's max-width cap */
+        padding-left: 0;       /* optional: remove side padding */
+        padding-right: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Reusable Centred Container for inner content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Full-width header/footer bars */
+        .site-header,
+        .site-footer {
+        width: 100%;
+        }
+
+        /* Inner header/footer content stays centered */
+        .site-header .container,
+        .site-footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* tweak as needed */
+        gap: 16px;
+        }
+        
+        /* Make images responsive in content */
+        .img {
+            max-width: 100%;
+            height: auto
+        }
+
+        /* Primary Button Styling */
+        .primary-button {
+            background-color: #007fa3;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 12px 20px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-button:hover {
+            background-color: #1e3765;
+            color: #ffffff;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Secondary Button Styling */
+        .link-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Tertiary Button Styling */
+        .tertiary-button {
+            background-color: #ffffff;
+            color: #1e3765;
+            font-family: Arial, sans-serif;
+            padding: 10px 15px;
+            border: 1px solid #007fa3;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tertiary-button:hover {
+            background-color: #f0f8ff;
+            color: #007fa3;
+            border-color: #1e3765;
+            text-decoration: none;
+        }
+        
+        /* Resource Item Styling */
+        .resource-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        
+        .resource-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .resource-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Downloadable Item Styling */
+        .download-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #E3F2FD;
+        }
+
+        .download-item h5 {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #1e3765;
+            font-size: 16px;
+        }
+        
+        .download-description {
+            margin-bottom: 15px;
+            line-height: 1.4;
+            color: #333;
+        }
+        
+        .last-updated {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        /* Accordion Styling */
+        .accordion-container {
+            max-width: 750px;
+            width: 100%;
+        }
+        
+        .accordion {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px 20px;
+            background-color: #f2f4f7;
+            color: #1e3765;
+            font-size: 16px;
+            font-weight: bold;
+            user-select: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            transition: background-color 0.2s ease;
+        }
+        
+        .accordion-header:hover {
+            background-color: #e8ecf0;
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .accordion-icon {
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .accordion-icon::before {
+            content: "+";
+        }
+        
+        .accordion-content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+            display: none;
+        }
+        
+        .accordion.open .accordion-content {
+            display: block;
+        }
+        
+        .accordion.open .accordion-icon::before {
+            content: "-";
+        }
+        
+        .accordion-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        
+        .accordion-content li {
+            margin-bottom: 8px;
+        }
+        
+        .accordion-content a {
+            text-decoration: none;
+        }
+        
+        .accordion-content a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Horizontal Rule Styling */
+        .hr-custom {
+            border: none;
+            height: 2px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        .hr-pt-20 {
+            margin-top: 40px;
+        }
+        
+        /* Heading Styling */
+        h2 {
+            color: #1e3765;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3765;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            color: #007fa3;
+            margin-top: 20px;
+        }
+    </style>
+    
+<h2><b>Deposit Data</b></h2>
+
+<h4><b>Dataverse collections and datasets</b></h4>
+
+<p>U of T Dataverse is organized into dataverse collections and datasets.</p>
+
+<ul>
+	<li>
+	<p>A <strong>dataverse collection</strong> is a a container for datasets and other dataverse collections. You may wish to have a dataverse collection if you will have many related datasets.</p>
+	</li>
+	<li>A <strong>dataset</strong> is a container for a set of research data, documentation, and code. Datasets contain files and metadata that describe those files.</li>
+</ul>
+<br>
+<p><img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/166980/images/DataverseStructureDiagram.jpg" width="400"></p>
+<br>
+<hr>
+
+<h4><b>Creating a dataverse collection</b></h4>
+
+<p>You can create a dataverse collection for your personal use, a project team or lab, a specific research project or publication, or any other organizing principle that makes sense for you.</p>
+
+<p>To create a dataverse collection:</p>
+
+<ol>
+	<li>Navigate to <a href="https://borealisdata.ca/dataverse/toronto" rel="noopener" target="_blank">U of T Dataverse</a> and log in with your UTORid</li>
+	<li>On the right side, click <strong>Add Data</strong></li>
+	<li>Select <strong>New Dataverse</strong></li>
+	<li>Fill in the appropriate information</li>
+	<li>Click <strong>Create Dataverse</strong></li>
+</ol>
+
+<p>At this point, your dataverse collection is unpublished and will only be visible to you. Go to Publishing your data for instructions on making your dataverse collection available to others.</p>
+
+<br>
+<hr>
+
+<h4><b>Adding a dataset</b></h4>
+
+<ol>
+	<li>Go to your dataverse collection</li>
+	<li>On the right side, click <strong>Add Data</strong></li>
+	<li>Select <strong>New Dataset</strong></li>
+	<li>Fill in the appropriate information (note: go to <a href="https://guides.library.utoronto.ca/u-t-dataverse/licensing" rel="noopener" target="_blank">licensing</a> for guidance on choosing a license)</li>
+	<li>Add your data files and documentation by clicking <strong>Select Files to Add</strong> or by dragging and dropping your files</li>
+	<li>Click <strong>Save Dataset</strong></li>
+</ol>
+
+<p>Note that you can upload up to 1000 files at a time. If your dataset has over 1000 files you can upload them in separate sessions, or you can use the <a href="https://borealisdata.ca/guides/en/latest/user/dataset-management.html?highlight=dvuploader" rel="noopener" target="_blank">DVUploader</a>, a command-line bulk uploader.</p>
+
+<br>
+<hr>
+
+<h4><b>Depositing large files</b></h4>
+
+<p>U of T Dataverse can currently accept individual files that are up to 5 GB. If you need to deposit files that are larger than 5 GB you can compress your files into a ZIP or TAR file format. Note that U of T Dataverse will automatically unzip the first level of compression when you add your data files, so if you are depositing files larger than 5 GB you will need to double zip your file(s).</p>
+
+<p>If you are working with a particularly large dataset we recommend contacting <a href="mailto:rdm@utoronto.ca" target="_blank">rdm@utoronto.ca</a> before uploading your files.</p>
+<br>
