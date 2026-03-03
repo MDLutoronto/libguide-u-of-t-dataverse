@@ -1,8 +1,6 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-       <style>
-
-        /* Body Styling for compatibility with LibGuides */
+<style type="text/css">/* Body Styling for compatibility with LibGuides */
         body.s-lg-guide-body #s-lib-footer-public.container {
         width: 100%;
         max-width: none;       /* remove Bootstrap's max-width cap */
@@ -289,25 +287,26 @@
             color: #007fa3;
             margin-top: 20px;
         }
-    </style>
-    
+</style>
+<style class="darkreader darkreader--sync" media="screen" type="text/css">
+</style>
 <h2><b>Version Management</b></h2>
 
-<p>U of T Dataverse automatically tracks all changes to your published dataset, including any changes to your files and metadata. Any changes to a published dataset are recorded in the <b>Versions</b> tab as a minor or major release. 
+<p>U of T Dataverse automatically tracks all changes to your published dataset, including any changes to your files and metadata. Any changes to a published dataset are recorded in the <b>Versions</b> tab as a minor or major release.</p>
 
 <p>A <b>minor release</b> includes small metadata changes that do not impact the file/dataset citation.</p>
 
 <p>A <b>major release</b> includes file updates, large metadata changes, or citation changes. Replacing a file in a published dataset will automatically be recorded as a major version update.</p>
 
-<hr>
-
+<hr />
 <h4><b>Replace a file in a published dataset</b></h4>
 
 <ol>
 	<li>Go to your dataset</li>
 	<li>Select the file you wish to replace from the file list</li>
 	<li>Click the three vertical dots to the right of the file name</li>
-	<li>Select <strong>Replace</strong></li>
+	<li>Select <strong>Replace</strong><br />
+	<b><img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/replace-file-1.png" style="width: 800px; height: 312px;" /></b></li>
 	<li>Add the new file using the <strong>Select Files to Add</strong> button or by dragging and dropping the file</li>
 	<li>If needed, update the File Name, File Path, and Description</li>
 	<li>Click <strong>Save Changes</strong></li>
@@ -316,13 +315,12 @@
 	<li>A pop-up will appear indicating this will be a major release, click <strong>Continue</strong></li>
 </ol>
 
-<hr>
-
+<hr />
 <h4><b>Update metadata in a published dataset</b></h4>
 
 <ol>
 	<li>Go to your dataset</li>
-	<li>Make necessary changes to your metadata (go to <a href=" https://guides.library.utoronto.ca/u-t-dataverse/update-metadata" target="_blank">Update Metadata</span></a></span> for details)</li>
+	<li>Make necessary changes to your metadata (go to <a href=" https://guides.library.utoronto.ca/u-t-dataverse/update-metadata" target="_blank">Update Metadata</a> for details)</li>
 	<li>In the pop-up window, select <strong>Minor Release</strong> or <strong>Major Release</strong> to indicate whether this is a minor or major version update
 	<ul>
 		<li>Minor release: select this option for small metadata changes that do not impact the file/dataset citation</li>
