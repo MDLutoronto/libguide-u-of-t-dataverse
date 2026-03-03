@@ -1,8 +1,6 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-       <style>
-
-        /* Body Styling for compatibility with LibGuides */
+<style type="text/css">/* Body Styling for compatibility with LibGuides */
         body.s-lg-guide-body #s-lib-footer-public.container {
         width: 100%;
         max-width: none;       /* remove Bootstrap's max-width cap */
@@ -289,30 +287,38 @@
             color: #007fa3;
             margin-top: 20px;
         }
-    </style>
-    
+</style>
+<style class="darkreader darkreader--sync" media="screen" type="text/css">
+</style>
 <h2><b>Publish Data</b></h2>
 
 <p>Publishing a dataverse collection and dataset make them viewable and searchable by others.</p>
 
-<div style="background:#eeeeee;border:1px solid #cccccc;padding:5px 10px;">Once you publish a dataset, it <b>cannot</b> be unpublished.&nbsp;</div>
+<div data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-border-right="" data-darkreader-inline-border-top="" style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor: var(--darkreader-background-eeeeee, #303235); --darkreader-inline-border-top: var(--darkreader-border-cccccc, #575f62); --darkreader-inline-border-right: var(--darkreader-border-cccccc, #575f62); --darkreader-inline-border-bottom: var(--darkreader-border-cccccc, #575f62); --darkreader-inline-border-left: var(--darkreader-border-cccccc, #575f62);">Once you publish a dataset, it <b>cannot</b> be unpublished.&nbsp;</div>
 
-<hr>
-
+<hr />
 <h4><b>Publish a dataverse collection</b></h4>
 
 <ol>
 	<li>Go to your dataverse collection</li>
-	<li>On the right side, click <strong>Publish&nbsp;</strong></li>
+	<li>On the right side, click <strong>Publish<br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-1-new.png" style="width: 600px; height: 200px;" /></strong></li>
+	<li>In the pop-up window, click&nbsp;<strong>Continue</strong><br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-2.png" style="width: 600px; height: 154px;" /></li>
+	<li>You should see a banner showing &#39;<strong>Success! &ndash; Your dataverse is now public.</strong>&#39; message once the dataverse collection is published.<br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-3-new.jpeg" style="width: 600px; height: 226px;" /></li>
 </ol>
 
-<hr>
-
+<hr />
 <h4><b>Publish a dataset</b></h4>
 
 <ol>
 	<li>Go to your dataset</li>
-	<li>On the right side, click <strong>Publish</strong></li>
-	<li>Select <strong>Publish</strong></li>
-	<li>In the pop-up window, click <strong>Continue</strong></li>
+	<li>On the right side, click <strong>Publish Dataset</strong><br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-1.png" style="width: 600px; height: 282px;" /></li>
+	<li>In the pop-up window, fill in the <strong>Version Note</strong> (optional)</li>
+	<li>Click <strong>Continue</strong><br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataset-2-new.png" style="width: 600px; height: 201px;" /></li>
+	<li>You should see the &#39;Version 1.0&#39; tag appear on the left side&nbsp;once the dataset is successfully published.<br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/version1-tag.png" style="width: 298px; height: 119px;" /></li>
 </ol>
