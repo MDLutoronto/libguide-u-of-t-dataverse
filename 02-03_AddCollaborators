@@ -1,8 +1,6 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-        <style>
-
-        /* Body Styling for compatibility with LibGuides */
+<style type="text/css">/* Body Styling for compatibility with LibGuides */
         body.s-lg-guide-body #s-lib-footer-public.container {
         width: 100%;
         max-width: none;       /* remove Bootstrap's max-width cap */
@@ -289,38 +287,73 @@
             color: #007fa3;
             margin-top: 20px;
         }
-    </style>
-    
+</style>
 <h2><b>Add Collaborators</b></h2>
 
 <h4><b>Add collaborators affiliated with U of T</b></h4>
 
 <ol>
-	<li>Confirm that the collaborator you are trying to add has created an account on U of T Dataverse (refer too Create an Account for more information).</li>
-	<li>Go to your dataverse collection or dataset</li>
-	<li>On the right side, click Edit (or Edit Dataset)</li>
-	<li>Select Permissions (for datasets, select Permissions &rarr; Dataset)</li>
-	<li>Click the Users/Groups heading</li>
-	<li>Click Assign Roles to Users/Groups</li>
-	<li>In the User/Group field, start typing the name of the user you wish to add and they will appear in the dropdown menu</li>
-	<li>Select the user you wish to add</li>
-	<li>Select the role you want to assign to the user</li>
-	<li>Click Save Changes</li>
+	<li><span style="font-size:14px;">Confirm that the collaborator you are trying to add has created an account on U of T Dataverse (refer too Create an Account for more information).</span></li>
+	<li><span style="font-size:14px;">Go to your dataverse collection or dataset</span></li>
+	<li><span style="font-size:14px;">On the right side, click Edit (or Edit Dataset)</span></li>
+	<li><span style="font-size:14px;">Select Permissions (for datasets, select Permissions &rarr; Dataset)</span></li>
 </ol>
 
-<br>
-<hr>
+<p><img alt="Permissions" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/permissions.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5. Click the Users/Groups heading</span></p>
+
+<p><img alt="user groups" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/users_groups1.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6. Click Assign Roles to Users/Groups</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7. In the User/Group field, start typing the name of the user you wish to add and they will appear in the dropdown menu</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8. Select the user you wish to add</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9. Select the role you want to assign to the user</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;10. Click Save Changes</span></p>
+
+<p><img alt="assign Roles" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/user_roles1.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
 
 <h4><b>Add collaborators outside of U of T</b></h4>
 
-<p>Only users who are affiliated with U of T and have a UTORid can create a dataverse collection or dataset in U of T Dataverse. However, once you have created a dataverse collection or dataset, you can add external collaborators. The person you would like to add must first sign up for an account with Borealis. After the external collaborator has registered their external collaborator account, the dataverse collection or dataset administrator can add them as a collaborator.</p>
+<p><span style="font-size:14px;">Only users who are affiliated with U of T and have a UTORid can create a dataverse collection or dataset in U of T Dataverse. However, once you have created a dataverse collection or dataset, you can add external collaborators. The person you would like to add must first sign up for an account with Borealis. After the external collaborator has registered their external collaborator account, the dataverse collection or dataset administrator can add them as a collaborator.</span></p>
 
 <h5><b>To register as an external collaborator:</b></h5>
 
 <ol>
-	<li>Go to <a href="https://borealisdata.ca/dataverse/dv">U of T Dataverse</a></li>
-	<li>Click Log In in the top right corner of the navigation bar</li>
-	<li>Under Underneath Institution not listed? click Sign up</li>
-	<li>Register with your preferred email</li>
+	<li><span style="font-size:14px;">Go to <a href="https://borealisdata.ca/dataverse/dv">U of T Dataverse</a></span></li>
+	<li><span style="font-size:14px;">Click Log In in the top right corner of the navigation bar</span></li>
+	<li><span style="font-size:14px;">Under Underneath Institution not listed? click Sign up</span></li>
+	<li><span style="font-size:14px;">Register with your preferred email</span></li>
 </ol>
 
+<p><img alt="External collaborator" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/not_UofT.jpg" style="float: left;" /></p>
