@@ -1,8 +1,6 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-       <style>
-
-        /* Body Styling for compatibility with LibGuides */
+<style type="text/css">/* Body Styling for compatibility with LibGuides */
         body.s-lg-guide-body #s-lib-footer-public.container {
         width: 100%;
         max-width: none;       /* remove Bootstrap's max-width cap */
@@ -289,8 +287,9 @@
             color: #007fa3;
             margin-top: 20px;
         }
-    </style>
-    
+</style>
+<style class="darkreader darkreader--sync" media="screen" type="text/css">
+</style>
 <h2><b>Manage Data Access</b></h2>
 
 <h4><b>Access restrictions</b></h4>
@@ -303,16 +302,17 @@
 	<li>Go to your dataset</li>
 	<li>Select the files you wish to restrict from the file list (note: you can select all files by clicking the checkbox at the top of the file list)</li>
 	<li>On the right side, click <strong>Edit Files</strong></li>
-	<li>Select <strong>Restrict</strong></li>
+	<li>Select <strong>Restrict</strong><br />
+	<img alt="Annotaed graphic showing the step how to restrict a file inside a dataset in U of T Dataverse" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/access-restrictions-1-new.png" style="width: 800px; height: 253px;" /></li>
 	<li>In the <strong>Terms of Access</strong> field in the pop-up box, enter any information about how and if users can gain access to the restricted files (for more information on Terms of Access, refer to the next section)</li>
 	<li>If you would like users to be able to request access to restricted files through the U of T Dataverse platform, click the <strong>Request Access</strong> checkbox (note: in order to restrict access to a file, you will need to either add Terms of Access or enable the Request Access function).</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li>Click <strong>Save Changes</strong><br />
+	<img alt="Pop-up window showing the restrict access option for dataset files in U of T Dataverse" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/access-restrictions-2.png" style="width: 400px; height: 256px;" /></li>
 </ol>
 
 <p>You can also update the terms of access after you have restricted the files.&nbsp;</p>
 
-<hr>
-
+<hr />
 <h4><b>Terms of Access</b></h4>
 
 <p>U of T Dataverse allows you to add terms of access to your dataset to explain who can access restricted files, how, and under what conditions (e.g. &ldquo;only U of T staff and students can access restricted files on completion of a data use agreement&rdquo;).&nbsp;</p>
@@ -322,14 +322,15 @@
 <ol>
 	<li>Go to your dataset</li>
 	<li>On the right side, click <strong>Edit Dataset</strong></li>
-	<li>Select <strong>Terms</strong></li>
+	<li>Select <strong>Terms</strong><br />
+	<img alt="Annotated graphic showing the dataset landing page with the steps to access the 'Terms' menu" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/terms-of-access-1.png" style="width: 800px; height: 382px;" /></li>
 	<li>Go to the <strong>Restricted Files + Terms of Access</strong> tab</li>
 	<li>Fill in the appropriate fields (tip: hover your mouse over the blue question mark next to a field&rsquo;s name to learn more about that field).</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li>Click <strong>Save Changes</strong><br />
+	<img alt="Annotated graphic highlighting the 'Save Changes' button and 'Restrcited Files + Terms of Access' tab" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/terms-of-access-2-new2.png" style="width: 600px; height: 356px;" /></li>
 </ol>
 
-<hr>
-
+<hr />
 <h4><b>Embargos</b></h4>
 
 <p>You may choose to apply an embargo to indicate that a dataset exists and will be available at a specified future date. The embargoed files will automatically be made public once the embargo end date has passed (unless they have also been restricted).&nbsp;&nbsp;&nbsp;</p>
@@ -344,9 +345,10 @@
 	<li>Go your dataset</li>
 	<li>Select the files you wish to embargo from the file list</li>
 	<li>On the right side, click <strong>Edit Files</strong></li>
-	<li>Select <strong>Embargo</strong></li>
+	<li>Select <strong>Embargo</strong><br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/embargo-1.png" style="width: 600px; height: 233px;" /></li>
 	<li>Enter the date you want the embargo to end in the <strong>Select the embargo end date</strong> field</li>
 	<li>Enter a brief reason for the embargo in the <strong>Add a reason</strong> field (optional)</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li>Click <strong>Save Changes</strong><br />
+	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/embargo-2.png" style="width: 600px; height: 352px;" /></li>
 </ol>
-
