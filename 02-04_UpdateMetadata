@@ -1,8 +1,6 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-       <style>
-
-        /* Body Styling for compatibility with LibGuides */
+<style type="text/css">/* Body Styling for compatibility with LibGuides */
         body.s-lg-guide-body #s-lib-footer-public.container {
         width: 100%;
         max-width: none;       /* remove Bootstrap's max-width cap */
@@ -289,66 +287,294 @@
             color: #007fa3;
             margin-top: 20px;
         }
-    </style>
-    
+</style>
 <h2><b>Update Metadata</b></h2>
 
-<p>You can add additional metadata to your dataverse collection and dataset once they&rsquo;ve been created. Adding metadata will make it easier for future users to search for, access, and reuse your data. For more information on metadata, go to the <a href="https://zenodo.org/record/5668945" rel="noopener" target="_blank">Metadata Best Practices Guide</a>.</p>
+<p><span style="font-size:14px;">You can add additional metadata to your dataverse collection and dataset once they&rsquo;ve been created. Adding metadata will make it easier for future users to search for, access, and reuse your data. For more information on metadata, go to the <a href="https://zenodo.org/record/5668945" rel="noopener" target="_blank">Metadata Best Practices Guide</a>.</span></p>
 
-<hr>
-
+<hr />
 <h4><b>Dataverse collection-level metadata</b></h4>
 
 <ol>
-	<li>Go to your dataverse collection</li>
-	<li>On the right side, click <strong>Edit</strong></li>
-	<li>Select <strong>General Information</strong></li>
-	<li>Update the relevant metadata</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li><span style="font-size:14px;">Go to your dataverse collection</span></li>
+	<li><span style="font-size:14px;">On the right side, click <strong>Edit</strong></span></li>
+	<li><span style="font-size:14px;">Select <strong>General Information</strong></span></li>
 </ol>
 
-<hr>
+<p><img alt="Editing General Information page" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/metadata_edit1.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; 4. Update the relevant metadata</span><span style="font-size:14px;"></span><span style="font-size:14px;"></span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; 5. Click <strong>Save Changes</strong></span></p>
+
+<p><img alt="Save changes to metadata" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/metadata_edit2a.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
 
 <h4><b>Dataset-level metadata</b></h4>
 
 <ol>
-	<li>Go to your dataset</li>
-	<li>On the right side, click <strong>Edit Dataset</strong></li>
-	<li>Select <strong>Metadata</strong></li>
-	<li>Update the relevant metadata</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li><span style="font-size:14px;">Go to your dataset</span></li>
+	<li><span style="font-size:14px;">On the right side, click <strong>Edit Dataset</strong></span></li>
+	<li><span style="font-size:14px;">Select <strong>Metadata</strong></span></li>
 </ol>
 
-<hr>
+<p><img alt="Edit Dataset_Metadata" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/metadata_edit3.jpg" style="float: left;" /></p>
 
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">4.Update the relevant metadata</span></p>
+
+<p><span style="font-size:14px;">5.Click <strong>Save Changes</strong></span></p>
+
+<p><img alt="Save changes to File Dataset metadata" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/metadata_edit4.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<hr />
 <h4><b>File-level metadata</b></h4>
 
 <ol>
-	<li>Go to your dataset</li>
-	<li>Select the file you wish to update from the file list</li>
-	<li>Click the three vertical dots to the right of the file name</li>
-	<li>Select <strong>Metadata</strong></li>
-	<li>Update the relevant metadata</li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li><span style="font-size:14px;">Go to your dataset</span></li>
+	<li><span style="font-size:14px;">Select the file you wish to update from the file list</span></li>
+	<li><span style="font-size:14px;">Click the three vertical dots to the right of the file name</span></li>
+	<li><span style="font-size:14px;">Select <strong>Metadata</strong></span></li>
 </ol>
 
-<hr>
+<p><img alt="File-level metadata editing" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/new_matadata_edit.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; 5.Update the relevant metadata</span><span style="font-size:14px;"></span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; 6. Click <strong>Save Changes</strong></span></p>
+
+<p><img alt="Save changes" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/matadata2.jpg" style="float: left;" /></p>
+
+<hr />
+<h4>&nbsp;</h4>
+
+<h4>&nbsp;</h4>
+
+<h4>&nbsp;</h4>
+
+<h4>&nbsp;</h4>
+
+<h4>&nbsp;</h4>
+
+<h4>&nbsp;</h4>
 
 <h4><b>File tags</b></h4>
 
-<p>Adding file tags allows you to clearly indicate what a file is (i.e. a data file, documentation, or code).</p>
+<p><span style="font-size:14px;">Adding file tags allows you to clearly indicate what a file is (i.e. a data file, documentation, or code).</span></p>
 
-<p>To add a file tag:</p>
+<p><span style="font-size:14px;">To add a file tag:</span></p>
 
 <ol>
-	<li>Go to your dataset</li>
-	<li>Select the file you wish to update from the file list</li>
-	<li>Click the three vertical dots to the right of the file name</li>
-	<li>Select <strong>Metadata</strong></li>
-	<li>Click the three vertical dots to the right of the file name</li>
-	<li>Select <strong>Tags</strong></li>
-	<li>Select the appropriate tag from the <strong>File Tags</strong> drop-down menu</li>
-	<li>Optional: insert a custom data tag in the <strong>Custom File Tag</strong> field and click <strong>Apply</strong></li>
-	<li>Click <strong>Save Changes</strong></li>
+	<li><span style="font-size:14px;">Go to your dataset</span></li>
+	<li><span style="font-size:14px;">Select the file you wish to update from the file list</span></li>
 </ol>
 
+<p><img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/tags_0.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 14px;">&nbsp; 3. Click the three vertical dots to the right of the file name</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4. Select <strong>Metadata</strong></span></p>
+
+<p><img alt="Edit options - Metadata" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/tags2.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;5. Click the three vertical dots to the right of the file name</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;6. Select <strong>Tags</strong></span></p>
+
+<p><img alt="Finding tags" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/tags3a.jpg" style="float: left;" /></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;7. Select the appropriate tag from the <strong>File Tags</strong> drop-down menu</span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;8. Optional: insert a custom data tag in the <strong>Custom File Tag</strong> field and click <strong>Apply</strong></span></p>
+
+<p><span style="font-size:14px;">&nbsp; &nbsp; &nbsp; &nbsp;9. Click <strong>Save Changes</strong></span></p>
+
+<p><img alt="Editing tags" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/47428/images/tags4a.jpg" style="float: left;" /></p>
