@@ -302,11 +302,11 @@
 <ol>
 	<li>Go to your dataverse collection</li>
 	<li>On the right side, click <strong>Publish<br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-1-new.png" style="width: 600px; height: 200px;" /></strong></li>
+	<img alt="Dataverse page showing “Unpublished” status with Publish button highlighted." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-1-new.png" style="width: 600px; height: 200px;" /></strong></li>
 	<li>In the pop-up window, click&nbsp;<strong>Continue</strong><br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-2.png" style="width: 600px; height: 154px;" /></li>
+	<img alt="Publish Dataverse dialog asking for confirmation, with Continue button highlighted." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-2.png" style="width: 600px; height: 154px;" /></li>
 	<li>You should see a banner showing &#39;<strong>Success! &ndash; Your dataverse is now public.</strong>&#39; message once the dataverse collection is published.<br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-3-new.jpeg" style="width: 600px; height: 226px;" /></li>
+	<img alt="Success message: “Your dataverse is now public.” highlighted on the dataverse page." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataverse-3-new.jpeg" style="width: 600px; height: 226px;" /></li>
 </ol>
 
 <hr />
@@ -315,10 +315,10 @@
 <ol>
 	<li>Go to your dataset</li>
 	<li>On the right side, click <strong>Publish Dataset</strong><br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-1.png" style="width: 600px; height: 282px;" /></li>
+	<img alt="Demo dataset page with “Publish Dataset” option highlighted in the right sidebar." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-1.png" style="width: 600px; height: 282px;" /></li>
 	<li>In the pop-up window, fill in the <strong>Version Note</strong> (optional)</li>
 	<li>Click <strong>Continue</strong><br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataset-2-new.png" style="width: 600px; height: 201px;" /></li>
+	<img alt="Publish Dataset dialog showing CC0 license, version note field highlighted, and Continue button to publish." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/publish-dataset-2-new.png" style="width: 600px; height: 201px;" /></li>
 	<li>You should see the &#39;Version 1.0&#39; tag appear on the left side&nbsp;once the dataset is successfully published.<br />
-	<img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/version1-tag.png" style="width: 298px; height: 119px;" /></li>
+	<img alt="Demo dataset page header with “Version 1.0” label highlighted." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/version1-tag.png" style="width: 298px; height: 119px;" /></li>
 </ol>
