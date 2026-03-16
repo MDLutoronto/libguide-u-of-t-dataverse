@@ -306,7 +306,7 @@
 	<li>Select the file you wish to replace from the file list</li>
 	<li>Click the three vertical dots to the right of the file name</li>
 	<li>Select <strong>Replace</strong><br />
-	<b><img alt="" loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/replace-file-1.png" style="width: 800px; height: 312px;" /></b></li>
+	<b><img alt="Dataset files list with options menu open and “Replace” highlighted." loading="lazy" src="https://d1qywhc7l90rsa.cloudfront.net/accounts/159013/images/replace-file-1.png" style="width: 800px; height: 312px;" /></b></li>
 	<li>Add the new file using the <strong>Select Files to Add</strong> button or by dragging and dropping the file</li>
 	<li>If needed, update the File Name, File Path, and Description</li>
 	<li>Click <strong>Save Changes</strong></li>
