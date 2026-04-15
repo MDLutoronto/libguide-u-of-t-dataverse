@@ -347,5 +347,5 @@
 
 <p>U of T Dataverse can currently accept individual files that are up to 5 GB. If you need to deposit files that are larger than 5 GB you can compress your files into a ZIP or TAR file format. Note that U of T Dataverse will automatically unzip the first level of compression when you add your data files, so if you are depositing files larger than 5 GB you will need to double zip your file(s).</p>
 
-<p>If you are working with a particularly large dataset we recommend contacting <a href="mailto:rdm@utoronto.ca" target="_blank">rdm@utoronto.ca</a> before uploading your files.</p>
+<p>If you are working with a particularly large dataset (e.g. over 900 files), we recommend contacting <a href="mailto:rdm@utoronto.ca" target="_blank">rdm@utoronto.ca</a> before uploading your files.</p>
 <br>
